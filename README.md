@@ -2,12 +2,12 @@
 
 ## Objectives
 
-1. Define a method that takes in an argument and uses that argument in the method body. 
-2. Define a method that takes in two arguments and uses both arguments in the method body. 
+1. Define a method that takes in an argument and uses that argument in the method body.
+2. Define a method that takes in two arguments and uses both arguments in the method body.
 
 ## Instructions
 
-You'll be coding your methods in `lib/introduction.rb`. 
+You'll be coding your methods in `lib/introduction.rb`.
 
 ### The `#introduction` Method
 
@@ -85,7 +85,7 @@ Failures:
        Diff:
        @@ -1,2 +1 @@
        -Hi, my name is Josh.
-       
+
      # ./spec/introduction_spec.rb:5:in `block (2 levels) in <top (required)>'
 
 ```
@@ -96,7 +96,7 @@ Now the important part of our error message is here:
 expected block to output "Hi, my name is Josh.\n" to stdout, but output nothing
 ```
 
-Our test is expecting our method to `puts` out the exact phrase, using the value of the `name` argument that the method is called with. 
+Our test is expecting our method to `puts` out the exact phrase, using the value of the `name` argument that the method is called with.
 
 Let's fix that:
 
@@ -108,7 +108,7 @@ def introduction(name)
 end
 ```
 
-Run the test again and we should be passing the first of our two tests. Use the test output and the procedure we just followed to get the second test passing. 
+Run the test again and we should be passing the first of our two tests. Use the test output and the procedure we just followed to get the second test passing.
 
 
 ### The `#introduction_with_language` Method
@@ -118,3 +118,11 @@ Define a method, `#introduction_with_language` that takes in two arguments, `nam
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/method-arguments-lab' title='Method Arguments Lab'>Method Arguments Lab</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/method-arguments-lab'>Methods and Arguments Lab</a> on Learn.co and start learning to code for free.</p>
+
+def introduction(name)
+  puts "Hi, my name is #{name}."
+end
+
+def introduction_with_language(name, language)
+  puts "Hi, my name is #{name} and I am learning to program in #{language}."
+end
